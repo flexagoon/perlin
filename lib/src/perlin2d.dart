@@ -17,8 +17,8 @@ List<List<double>> perlin2d({
   seed ??= Random().nextInt(10000);
 
   // Iterate through all of the candidate points.
-  return List.generate(height * frequency, (y) {
-    return List.generate(width * frequency, (x) {
+  return List.generate(width * frequency, (x) {
+    return List.generate(height * frequency, (y) {
       // Get the double coordinate of the point.
       final pointX = x / frequency;
       final pointY = y / frequency;
